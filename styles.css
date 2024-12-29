@@ -1,0 +1,86 @@
+.gradient-background {
+  background: linear-gradient(300deg, #014565, #245f81, #0069A2);
+  /* background: linear-gradient(300deg, #b3364b, #772432); */
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+:root {
+    --bs-body-font-family: 'Montserrat', sans-serif;
+}
+
+.btn-primary {
+  background: radial-gradient(circle, #f2df74, #dab141);
+  border: none;
+  --bs-btn-bg: transparent;
+  --bs-btn-border-color: transparent;
+  --bs-btn-hover-bg: transparent;
+  --bs-btn-hover-border-color: transparent;
+  --bs-btn-active-bg: transparent;
+  --bs-btn-active-border-color: transparent;
+  --bs-btn-color: black;
+  --bs-btn-hover-color: black;
+  --bs-btn-active-color: black;
+  --bs-btn-border-radius: 36px;
+  --bs-btn-padding-y: 1rem;
+}
+
+.btn-primary:hover {
+  background: radial-gradient(circle, #d9c867, #c49c3a);
+}
+
+.btn-primary:active {
+  background: radial-gradient(circle, #c1b25b, #af8a34);
+}
+
+#carouselExample {
+  width: 100%;
+  position: relative;
+  padding-top: 66.67%; /* This creates a 3:2 aspect ratio (2/3 = 0.6667) */
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+#carouselExample .carousel-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 36px;
+  border: 1px solid #F2DF74;
+}
+
+#carouselExample .carousel-item {
+  height: 100%;
+}
+
+#carouselExample .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h2.text-body-emphasis {
+  background: linear-gradient(45deg, #F2DF74, #dab141);
+  /* -webkit-background-clip: text; */
+  background-clip: text;
+  color: transparent !important;
+}
+
+a:hover {
+  color: #F2DF74 !important;
+  text-decoration: none;
+}
